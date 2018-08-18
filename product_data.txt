@@ -1,0 +1,3 @@
+vanessa112,test0124,glass,2,fragile,
+admad112,test0127,wallet,1,not fragile,
+faye123,test0128,paper,2,not fragile,

@@ -1,0 +1,3 @@
+test0127,paper,6,not fragile,
+test0123,shampoo,10,not fragile,
+test0124,colour glass,8,fragile,
