@@ -112,11 +112,12 @@ public class loginpage extends Component implements ActionListener{
                 if(username.getText().isEmpty() || password.getText().isEmpty()){
 
                     No_input();
+                    break;
 
                 }else if(Username.equals(user) && Password.equals(pass) && type.equals("admin")){                //For admin login
 
                     Admin_login();
-                    
+
                 }else if (Username.equals(user) && Password.equals(pass) && type.equals("cust")){               //For customer login
 
                     Cust_login();

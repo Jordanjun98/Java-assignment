@@ -1,3 +1,2 @@
-vanessa112,test0124,glass,2,fragile,
-admad112,test0127,wallet,1,not fragile,
-faye123,test0128,paper,2,not fragile,
+faye123, lv588, louis vuitton bag, 1, fragile
+evyonne99, pd888, pandora ring, 1, fragile

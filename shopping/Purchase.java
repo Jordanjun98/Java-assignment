@@ -66,7 +66,7 @@ public class Purchase implements ActionListener {
 
         //String[][] labels = new String[arr_03.size()][4];
 
-        String[] columnheader = {"Customer ID","Product ID", "Product Name", "Quantity","Type"};
+        String[] columnheader = {"Customer ID","Product ID","Product Name", "Quantity", "Product rate"};
 
         for(int i = 0; i < arr_03.size(); i++){
 
@@ -130,18 +130,24 @@ public class Purchase implements ActionListener {
 
         else if (e.getSource() == add){
             manager_add_product add_new = new manager_add_product();
+
+            //manager_manage_cust_order  edit_cust_order = new manager_manage_cust_order();
+
             purchase_item.setVisible(false);
-            add_new.manager_add_interface();
+
+            //edit_cust_order.edit_cust_order();
+           add_new.manager_add_interface();
 
         }
 
         else if (e.getSource() == search_product){
 
-            manager_search_order m_search_order = new manager_search_order();
+            //manager_search_order m_search_order = new manager_search_order();
 
+            manager_manage_cust_order m_search_order = new manager_manage_cust_order();
+
+            customer_data user_id = new customer_data();
             product_data search1 = new product_data();
-
-                            //<<------- stop here
 
 
             if(product_id.getText().isEmpty()){
@@ -154,6 +160,7 @@ public class Purchase implements ActionListener {
 
                 search1.setProduct_id(product_id.getText());
 
+               // m_search_order.Check_pro(search1.getProduct_id());
                 m_search_order.Check_pro(search1.getProduct_id());
 
             }

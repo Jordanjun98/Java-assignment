@@ -18,7 +18,7 @@ public class search_customer implements ActionListener{
         try{
 
             Scanner sc = new Scanner(new File("src/customer_data.txt"));
-            List<String> lines = new ArrayList<String>();
+            List<String> lines = new ArrayList<>();
 
             while (sc.hasNextLine()){
                 lines.add(sc.nextLine());

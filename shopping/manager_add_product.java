@@ -25,7 +25,7 @@ public class manager_add_product implements ActionListener {
 
     public void manager_add_interface(){
         //Build the user interface
-        Add_product = new JFrame("Manager add product data");
+        Add_product = new JFrame("Manager add stock data");
         Add_product.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 
@@ -112,11 +112,13 @@ public class manager_add_product implements ActionListener {
 
             product_data Add_new = new product_data();
 
-            //product Add_New = new product();
+           // product Add_New = new product();
 
             if (Product_id.getText().isEmpty() || Product_name.getText().isEmpty() || Product_quantity.getText().isEmpty() || Product_type.getText().isEmpty()){
                 JOptionPane.showMessageDialog(null, "Please add in product detail");
             }else{
+
+
                 Add_new.setProduct_id(Product_id.getText());
                 Add_new.setProduct_name(Product_name.getText());
                 Add_new.setProduct_quantity(Product_quantity.getText());
@@ -135,7 +137,7 @@ public class manager_add_product implements ActionListener {
 
             if (Product_id.getText().isEmpty() || Product_name.getText().isEmpty()){
 
-                JOptionPane.showMessageDialog(null, "Please add in product detail");
+                JOptionPane.showMessageDialog(null, "Please add in product id and product name");
 
             }else{
 

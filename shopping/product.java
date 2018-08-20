@@ -28,7 +28,7 @@ public class product implements ActionListener {
     JButton back = new JButton("Back");
     JButton search = new JButton("Search");
     JButton add = new JButton("Add new product");
-    JButton bill = new JButton("Bill");
+    JButton bill = new JButton("Purchase history");
 
 
 
@@ -180,7 +180,7 @@ public class product implements ActionListener {
 
         else if (e.getSource() == bill){  //<------ display bill in progress
             if(Cust_id.getText().isEmpty()){
-                JOptionPane.showMessageDialog(null, "Please enter customer id to check bill");
+                JOptionPane.showMessageDialog(null, "Please enter customer id to check purchase history");
             }else{
                 cust_buy_id.setCustomer_ID(Cust_id.getText());
 
